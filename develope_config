@@ -1,0 +1,15 @@
+这是一个maven项目，需要转换为eclipse项目
+mvn eclipse:eclipse 
+出错，缺少依赖
+
+会将一些依赖下载到C:\Users\.m2\repository 目录
+
+1.shoul use jdk,not jre
+这个是因为指定路径为jre了，没有javac 工具，换成jdk即可
+在run configuration 中的jre option 中指定
+1.[ERROR] Failed to execute goal org.apache.maven.plugins:maven-javadoc-plugin:2.9:jar (attach-javadocs) on project metrics-core: MavenReportException: Error while creating archive:
+[ERROR] Exit code: 1 - java.lang.IllegalArgumentException
+Command line was: "C:\Program Files\Java70\jre\..\bin\javadoc.exe" @options @packages
+[ERROR] 
+[ERROR] Refer to the generated Javadoc files in 'C:\Users\git\graphite-metrics\metrics-core\target\apidocs' dir.
+[ERROR] -> [Help 1]
