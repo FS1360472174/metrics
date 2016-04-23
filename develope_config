@@ -13,3 +13,21 @@ Command line was: "C:\Program Files\Java70\jre\..\bin\javadoc.exe" @options @pac
 [ERROR] 
 [ERROR] Refer to the generated Javadoc files in 'C:\Users\git\graphite-metrics\metrics-core\target\apidocs' dir.
 [ERROR] -> [Help 1]
+
+javadoc 版本不对，java doc 暂时没什么，先注释掉
+   <!--  
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+ !-->
+ 
